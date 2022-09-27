@@ -2,8 +2,8 @@
 ___
 
 ## Project Checkpoint 1
-* [ ] Establish a Jira Board *(Skyler)*
-  * [ ] Create first sprint
+* [X] Establish a Jira Board *(Skyler)*
+  * [X] Create first sprint
 * [ ] Establish a project Github *(Skyler)*
   * [X] Create Github Repo
   * [X] Use markdown for documentation
