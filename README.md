@@ -1,14 +1,33 @@
 # CIS 350 Intro to Software Engineering Project
-## Leg Desktop App
+## GVSU College of Computing Professor Course Scheduler
 
 ___
 
-## Members
+## Made By
 * Skyler R
 * Ethan M
 * Alana S
 
 ___
 
-### Description-
-> A Desktop app to help people improve their legs. Using scheduling, templates and reminders we hope to get people both looking to exercise and to work through Physical Therapy (PT) 
+### Introduction
+> The GVSU CIS College doesn't have a fully efficient method for scheduling classes based on the many constraints present. While the primary method is currently around 90% efficient there are still methods available to improve the process and make it more streamlined. The main one is to be able to take emails and apply the constraints to a calander in a visual and easy to interpret fashion. This would translate to our desktop application having 2 main functions, being able to do basic scheduling on a visual calander based on constraints provided, and being able to find constraints given a set of emails.
+
+
+## Architectual Design
+
+(Put design here)
+
+### Class Diagram
+
+(Put class diagram here)
+
+### Sequence Diagram
+
+(Put seeuqnce/communication diagrams here)
+
+___
+
+## UI Designs
+
+(Place any UI designs here)
