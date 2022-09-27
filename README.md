@@ -1,5 +1,9 @@
 # CIS 350 Intro to Software Engineering Project
 ## GVSU College of Computing Professor Course Scheduler
+___
+
+#### [Jira Board](https://skylerruiter.atlassian.net/jira/software/projects/SEPROJ/boards/4/backlog)
+#### [Master Doc](https://docs.google.com/document/d/1HsiiA_qSesVKqVJYQbRfsFRsPfKZgV0dTYukX1p7uEI/edit?usp=sharing)
 
 ___
 
