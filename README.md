@@ -34,4 +34,8 @@ ___
 
 ## UI Designs
 
-(Place any UI designs here)
+![Screen-Shot-2022-10-02-at-5 54 49-PM](https://user-images.githubusercontent.com/89789705/193479539-5ef80d7d-301f-4990-91f4-4ba7cd871cc9.jpeg)
+
+<img width="612" alt="Screen Shot 2022-10-02 at 5 54 34 PM" src="https://user-images.githubusercontent.com/89789705/193479526-2b2e87cf-7d78-4604-8536-ba3b11f9c4a2.png">
+
+<img width="615" alt="Screen Shot 2022-10-02 at 6 25 57 PM" src="https://user-images.githubusercontent.com/89789705/193479490-1208a3af-f582-437b-b50e-0a9dd18e206b.png">
