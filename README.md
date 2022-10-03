@@ -18,17 +18,17 @@ ___
 > The GVSU CIS College doesn't have a fully efficient method for scheduling classes based on the many constraints present. While the primary method is currently around 90% efficient there are still methods available to improve the process and make it more streamlined. The main one is to be able to take emails and apply the constraints to a calander in a visual and easy to interpret fashion. This would translate to our desktop application having 2 main functions, being able to do basic scheduling on a visual calander based on constraints provided, and being able to find constraints given a set of emails.
 
 
-## Architectual Design
+## Architectural Design
 
-(Put design here)
+![UML Use Case](https://github.com/aSabene/CIS350/blob/6a71580dd3c440f1caeede8ed85cbf82168beace/UML%20use%20case.png)
 
 ### Class Diagram
 
-(Put class diagram here)
+![UML Class Diagram](https://github.com/aSabene/CIS350/blob/6a71580dd3c440f1caeede8ed85cbf82168beace/UML%20class.png)
 
 ### Sequence Diagram
 
-(Put seeuqnce/communication diagrams here)
+![UML Sequence Diagram](https://github.com/aSabene/CIS350/blob/6a71580dd3c440f1caeede8ed85cbf82168beace/UML%20sequence.png)
 
 ___
 
