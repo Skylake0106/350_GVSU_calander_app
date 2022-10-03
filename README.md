@@ -1,5 +1,6 @@
 # CIS 350 Intro to Software Engineering Project
 ## GVSU College of Computing Professor Course Scheduler
+> "Trust me you will not get me excited." -Rahat Rafiq 2022
 ___
 
 #### [Jira Board](https://skylerruiter.atlassian.net/jira/software/projects/SEPROJ/boards/4/backlog)
