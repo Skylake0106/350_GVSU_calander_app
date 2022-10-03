@@ -21,15 +21,14 @@ ___
 
 ## Architectural Design
 
-![UML Use Case](https://github.com/aSabene/CIS350/blob/6a71580dd3c440f1caeede8ed85cbf82168beace/UML%20use%20case.png)
-
+![UML Use Case](https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20use%20case.png)
 ### Class Diagram
 
-![UML Class Diagram](https://github.com/aSabene/CIS350/blob/6a71580dd3c440f1caeede8ed85cbf82168beace/UML%20class.png)
+![UML Class Diagram](https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20class.png)
 
 ### Sequence Diagram
 
-![UML Sequence Diagram](https://github.com/aSabene/CIS350/blob/6a71580dd3c440f1caeede8ed85cbf82168beace/UML%20sequence.png)
+![UML Sequence Diagram](https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20sequence.png)
 
 ___
 
