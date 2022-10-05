@@ -25,6 +25,21 @@ The scope of the project will be determined as it is developed, as the sheer qua
 ___
 
 ## 2 Introduction
+Currently there are three main tools used to create the course schedule. 
+1) A document that allows professors to express their willingness to teach a certain course, giving each course a number from 0-3. With 0 being a course they are unable to teach and a 3 meaning they would be able to teach it whenever and with confidence. 
+2) Another document that has all of the courses with their information such as time, room, section number, and professor
+3) A final document that visualizes the data into a large scrollable table
+
+Then there are a few constraints that determine if a professor is eligible to be places in a course
+* Their depth rating (0-3)
+* Their current credit hours (may need overload permission)
+* Personal/Medical/Administrative time conflicts
+* If they must teach a certain course
+* Other course conflicts (already teaching another course at the same time)
+
+Knowing the workflow for creating the schedule and the tools used to do it, we determined the optimal way to streamline the process is to be able to visualize the data better than a simple HTML table, and to be able to provide smart suggestions for potential professors to teach a specific course. 
+
+These are lofty goals and we will most likely attempt to start with the most time saving measures and build up from there. We will need to create a very solid database for this information and write complex search queries to analyze the data. We will need to create an attractive front end to display the data effectively, and finally we need smart algorithms to determine potential professors to match a given course. 
 
 
 ___
