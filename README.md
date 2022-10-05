@@ -45,6 +45,11 @@ These are lofty goals and we will most likely attempt to start with the most tim
 ___
 
 ## 3 Architectural Design
+We decided that we would stick with the tried and true MERN tech stack. This is because we don't have any experience with a mobile application so we wanted to work with a desktop application, and as we don't have a lot of experience with full stack development we decided to use MERN since it was demonstrated in lecture and is used by many others in the same class. 
+
+<p align="center">
+  <img width="50%" alt="Architecture Design" src="/Images/project_architecture.JPG">
+</p>
 
 ### 3.1 Use Case Diagram
 <p align="center">
