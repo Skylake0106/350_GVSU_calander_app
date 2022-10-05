@@ -1,18 +1,17 @@
 # CIS 350 Intro to Software Engineering Project
 ### GVSU College of Computing Professor Course Scheduler
 > "Trust me you will not get me excited." -Rahat Rafiq 2022
-___
 
 #### [Jira Board](https://skylerruiter.atlassian.net/jira/software/projects/SEPROJ/boards/4/backlog)
 #### [Master Doc](https://docs.google.com/document/d/1HsiiA_qSesVKqVJYQbRfsFRsPfKZgV0dTYukX1p7uEI/edit?usp=sharing)
 ___
-## Made By
+### Made By
 * Skyler R
 * Ethan M
 * Alana S
 ___
 
-### 1 Abstract
+## 1 Abstract
 The primary goal of this project is to increase the efficiency and effectiveness of taking in all of the data that comes with scheduling 47 professors for classes in the GVSU College of Computing. 
 
 The process is already to the point where the first 90% of the schedule is quick and effective and has little current need for change. Yet the last 10% is where the vast majority of the time is spent resolving teaching conflicts, course requirements, overload requests, and other finalizing tasks. 
@@ -23,9 +22,12 @@ Our specific solution is twofold
 
 The scope of the project will be determined as it is developed, as the sheer quantity of improvements to a system like this is outside of the scope of this project. For example there could be automatic detection of double booked classrooms, teaching conflicts, credit hour needs unmet, ect. The current overall goal however is to create a web app that can supplement some parts of the schedule creating process.
 
+___
 
-### 2 Introduction
+## 2 Introduction
 
+
+___
 
 ## 3 Architectural Design
 
