@@ -1,69 +1,81 @@
 # CIS 350 Intro to Software Engineering Project
-## GVSU College of Computing Professor Course Scheduler
+### GVSU College of Computing Professor Course Scheduler
 > "Trust me you will not get me excited." -Rahat Rafiq 2022
-___
 
 #### [Jira Board](https://skylerruiter.atlassian.net/jira/software/projects/SEPROJ/boards/4/backlog)
 #### [Master Doc](https://docs.google.com/document/d/1HsiiA_qSesVKqVJYQbRfsFRsPfKZgV0dTYukX1p7uEI/edit?usp=sharing)
-
 ___
-
-## Made By
+### Made By
 * Skyler R
 * Ethan M
 * Alana S
+___
+
+## 1 Abstract
+The primary goal of this project is to increase the efficiency and effectiveness of taking in all of the data that comes with scheduling 47 professors for classes in the GVSU College of Computing. 
+
+The process is already to the point where the first 90% of the schedule is quick and effective and has little current need for change. Yet the last 10% is where the vast majority of the time is spent resolving teaching conflicts, course requirements, overload requests, and other finalizing tasks. 
+
+Our specific solution is twofold 
+1) Provide a better visual representation of the schedule to allow for information to be displayed more clearly allowing for better decision making 
+2) Give suggestions when attempting to fill in a schedule. Giving a list of suggestions takes a lot of manual labor searching an entire database out of the equation
+
+The scope of the project will be determined as it is developed, as the sheer quantity of improvements to a system like this is outside of the scope of this project. For example there could be automatic detection of double booked classrooms, teaching conflicts, credit hour needs unmet, ect. The current overall goal however is to create a web app that can supplement some parts of the schedule creating process.
 
 ___
 
-### Introduction
-> The GVSU CIS College doesn't have a fully efficient method for scheduling classes based on the many constraints present. While the primary method is currently around 90% efficient there are still methods available to improve the process and make it more streamlined.
+## 2 Introduction
+Currently there are three main tools used to create the course schedule. 
+1) A document that allows professors to express their willingness to teach a certain course, giving each course a number from 0-3. With 0 being a course they are unable to teach and a 3 meaning they would be able to teach it whenever and with confidence. 
+2) Another document that has all of the courses with their information such as time, room, section number, and professor
+3) A final document that visualizes the data into a large scrollable table
 
-### Abstract 
->  Faculty currently assign depth values to courses they can readily teach, teach, or teach following discussion; assigned values are 3, 2, & 1 respectively. Once these are completed, any courses not given a number will be left blank. 
+Then there are a few constraints that determine if a professor is eligible to be places in a course
+* Their depth rating (0-3)
+* Their current credit hours (may need overload permission)
+* Personal/Medical/Administrative time conflicts
+* If they must teach a certain course
+* Other course conflicts (already teaching another course at the same time)
 
->  When the schedule administrator starts building a semester calendar, they can select a course from the course list which would automatically populate the list of faculty that assigned that course with a level 3 depth, then level 2. The calendar is then filled in this manner, until all courses are assigned to professors. 
+Knowing the workflow for creating the schedule and the tools used to do it, we determined the optimal way to streamline the process is to be able to visualize the data better than a simple HTML table, and to be able to provide smart suggestions for potential professors to teach a specific course. 
 
->  Faculty can submit constraint information to the scheduler administrator. These can be medical issues, personal, or administrative responsibilities that may conflict with teaching a course. Additional faculty attributes will also help streamline this process. 
->* 'Must Teach' course; an example is that one professor always teaches CIS290, CIS160-05, etc.
->* Tenured or affiliate; generate default credit limits for teaching, when a professor reaches that limit, their name can be listed as an option, but grayed- out so administrator knows an adjustment is needed 
+These are lofty goals and we will most likely attempt to start with the most time saving measures and build up from there. We will need to create a very solid database for this information and write complex search queries to analyze the data. We will need to create an attractive front end to display the data effectively, and finally we need smart algorithms to determine potential professors to match a given course. 
 
-
-> Conflicts in scheduling may include, but are not limited to: 
->* when professor has reached their credit limits of teaching
->* no professor is available for a class 
->* constraint conflicts with course availability
-
->> When conflicts arise, administrator can contact faculty for:
->>* credit hour modifications
->>* assess availability of professors that listed the course as a level 1
-
-
-
-
-## Architectural Design
-
-![UML Use Case](https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20use%20case.png)
-### Class Diagram
-
-<img width="786" alt="UML class diagram" src="https://user-images.githubusercontent.com/94251267/193959366-363cb30a-a0aa-470e-bcbc-f43adebb5b1c.png">
-
-### Sequence Diagram
-
-![UML Sequence Diagram](https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20sequence.png)
 
 ___
 
-## UI Designs
+## 3 Architectural Design
 
-**Home Screen**
+### 3.1 Use Case Diagram
+<p align="center">
+  <img width="75%" alt="UML class diagram" src="https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20use%20case.png">
+</p>
 
-<img width="615" alt="Screen Shot 2022-10-02 at 6 25 57 PM" src="https://user-images.githubusercontent.com/89789705/193479490-1208a3af-f582-437b-b50e-0a9dd18e206b.png">
+### 3.2 Class Diagram
+<p align="center">
+  <img width="75%" alt="UML class diagram" src="https://user-images.githubusercontent.com/94251267/193959366-363cb30a-a0aa-470e-bcbc-f43adebb5b1c.png">
+</p>
 
-**Main Screen**
+### 3.3 Sequence Diagram
+<p align="center">
+  <img width="75%" alt="UML class diagram" src="https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20sequence.png">
+</p>
 
-<img width="612" alt="Screen Shot 2022-10-02 at 5 54 34 PM" src="https://user-images.githubusercontent.com/89789705/193479526-2b2e87cf-7d78-4604-8536-ba3b11f9c4a2.png">
+___
 
-**Constraint Screen**
+## 4 UI Designs
 
-![Screen-Shot-2022-10-02-at-5 54 49-PM](https://user-images.githubusercontent.com/89789705/193479539-5ef80d7d-301f-4990-91f4-4ba7cd871cc9.jpeg)
+### 4.1 Home Screen
+<p align="center">
+  <img width="75%" alt="Screen Shot 2022-10-02 at 6 25 57 PM" src="https://user-images.githubusercontent.com/89789705/193479490-1208a3af-f582-437b-b50e-0a9dd18e206b.png">
+</p>
 
+### 4.2 Main Screen
+<p align="center">
+  <img width="75%" alt="Screen Shot 2022-10-02 at 5 54 34 PM" src="https://user-images.githubusercontent.com/89789705/193479526-2b2e87cf-7d78-4604-8536-ba3b11f9c4a2.png">
+</p>
+
+### 4.3 Constraint Screen
+<p align="center">
+  <img width="75%" alt="Screen Shot 2022-10-02 at 5 54 34 PM" src="https://user-images.githubusercontent.com/89789705/193479539-5ef80d7d-301f-4990-91f4-4ba7cd871cc9.jpeg">
+</p>
