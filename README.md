@@ -24,7 +24,7 @@ ___
 ![UML Use Case](https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20use%20case.png)
 ### Class Diagram
 
-![UML Class Diagram](https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20class.png)
+<img width="786" alt="UML class diagram" src="https://user-images.githubusercontent.com/94251267/193959366-363cb30a-a0aa-470e-bcbc-f43adebb5b1c.png">
 
 ### Sequence Diagram
 
