@@ -16,7 +16,28 @@ ___
 ___
 
 ### Introduction
-> The GVSU CIS College doesn't have a fully efficient method for scheduling classes based on the many constraints present. While the primary method is currently around 90% efficient there are still methods available to improve the process and make it more streamlined. The main one is to be able to take emails and apply the constraints to a calander in a visual and easy to interpret fashion. This would translate to our desktop application having 2 main functions, being able to do basic scheduling on a visual calander based on constraints provided, and being able to find constraints given a set of emails.
+> The GVSU CIS College doesn't have a fully efficient method for scheduling classes based on the many constraints present. While the primary method is currently around 90% efficient there are still methods available to improve the process and make it more streamlined.
+
+### Abstract 
+>  Faculty currently assign depth values to courses they can readily teach, teach, or teach following discussion; assigned values are 3, 2, & 1 respectively. Once these are completed, any courses not given a number will be left blank. 
+
+>  When the schedule administrator starts building a semester calendar, they can select a course from the course list which would automatically populate the list of faculty that assigned that course with a level 3 depth, then level 2. The calendar is then filled in this manner, until all courses are assigned to professors. 
+
+>  Faculty can submit constraint information to the scheduler administrator. These can be medical issues, personal, or administrative responsibilities that may conflict with teaching a course. Additional faculty attributes will also help streamline this process. 
+>* 'Must Teach' course; an example is that one professor always teaches CIS290, 160-05, etc.
+>* Tenured or affiliate; generate default credit limits for teaching, when a professor reaches that limit, their name can be listed as an option, but grayed- out so administrator knows an adjustment is neede 
+
+
+> Conflicts in scheduling may include, but are not limited to: 
+>* when professor has reached their credit limits of teaching (professor has an attribute of affliate or tenured faculty)
+>* no professor is available for a class 
+>* constraint conflicts with course availability
+
+>> When conflicts arise, administrator can contact faculty for:
+>>* credit hour modifications
+>>* assess availability of professors that listed the course as a level 1
+
+
 
 
 ## Architectural Design
