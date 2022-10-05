@@ -24,12 +24,12 @@ ___
 >  When the schedule administrator starts building a semester calendar, they can select a course from the course list which would automatically populate the list of faculty that assigned that course with a level 3 depth, then level 2. The calendar is then filled in this manner, until all courses are assigned to professors. 
 
 >  Faculty can submit constraint information to the scheduler administrator. These can be medical issues, personal, or administrative responsibilities that may conflict with teaching a course. Additional faculty attributes will also help streamline this process. 
->* 'Must Teach' course; an example is that one professor always teaches CIS290, 160-05, etc.
->* Tenured or affiliate; generate default credit limits for teaching, when a professor reaches that limit, their name can be listed as an option, but grayed- out so administrator knows an adjustment is neede 
+>* 'Must Teach' course; an example is that one professor always teaches CIS290, CIS160-05, etc.
+>* Tenured or affiliate; generate default credit limits for teaching, when a professor reaches that limit, their name can be listed as an option, but grayed- out so administrator knows an adjustment is needed 
 
 
 > Conflicts in scheduling may include, but are not limited to: 
->* when professor has reached their credit limits of teaching (professor has an attribute of affliate or tenured faculty)
+>* when professor has reached their credit limits of teaching
 >* no professor is available for a class 
 >* constraint conflicts with course availability
 
