@@ -1,5 +1,5 @@
 # CIS 350 Intro to Software Engineering Project
-### GVSU College of Computing Professor Course Scheduler
+### GVSU College of Computing Faculty Scheduling Assistant
 > "Trust me you will not get me excited." -Rahat Rafiq 2022
 
 #### [Jira Board](https://skylerruiter.atlassian.net/jira/software/projects/SEPROJ/boards/4/backlog)
@@ -45,7 +45,7 @@ These are lofty goals and we will most likely attempt to start with the most tim
 ___
 
 ## 3 Architectural Design
-We decided that we would stick with the tried and true MERN tech stack. This is because we don't have any experience with a mobile application so we wanted to work with a desktop application, and as we don't have a lot of experience with full stack development we decided to use MERN since it was demonstrated in lecture and is used by many others in the same class. 
+We decided that we would stick with the tried and true MERN tech stack with Next.js as our React framework. This is because MERN is a tech stack well understood by the project advisor (Professor Rafiq), and many others are using it and can help with problem solving. We also realize the potential benefits of using the MERN tech stack such as the ease of use that comes with MongoDB, and the nice relationshop between having JavaScript for both ends of development.
 
 <p align="center">
   <img width="50%" alt="Architecture Design" src="/Images/project_architecture.JPG">
