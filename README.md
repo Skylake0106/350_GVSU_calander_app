@@ -77,9 +77,8 @@ ___
 </p>
 
 ### 4.2 Main Screen
-<p align="center">
-  <img width="75%" alt="Screen Shot 2022-10-02 at 5 54 34 PM" src="https://user-images.githubusercontent.com/89789705/193479526-2b2e87cf-7d78-4604-8536-ba3b11f9c4a2.png">
-</p>
+<img width="529" alt="Screen Shot 2022-10-06 at 8 18 27 PM" src="https://user-images.githubusercontent.com/89789705/194440888-c78757e4-5b83-40aa-b1d9-0acad4564116.png">
+
 
 ### 4.3 Constraint Screen
 <p align="center">
