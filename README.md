@@ -54,7 +54,7 @@ We decided that we would stick with the tried and true MERN tech stack with Next
 
 ### 3.1 Use Case Diagram
 <p align="center">
-  <img width="75%" alt="UML class diagram" src="https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20use%20case.png">
+  <img width="75%" alt="UML class diagram" src="https://github.com/Skylake0106/CIS_Faculty_Scheduling_Assistant/blob/4475cbb5792cfe3b7d98d587a6a248be357db2c9/Images/UML%20use%20case%20update.png">
 </p>
 
 ### 3.2 Class Diagram
@@ -64,7 +64,7 @@ We decided that we would stick with the tried and true MERN tech stack with Next
 
 ### 3.3 Sequence Diagram
 <p align="center">
-  <img width="75%" alt="UML class diagram" src="https://github.com/Skylake0106/350_GVSU_calander_app/blob/e852384296b769ada0bd0baa15627da41162c5ba/UML%20sequence.png">
+  <img width="75%" alt="UML class diagram" src="https://github.com/Skylake0106/CIS_Faculty_Scheduling_Assistant/blob/ca3b708848673faf28d74d3cd9c1054a40c58fc6/Images/UML%20sequence-%20faculty%20assignment.png">
 </p>
 
 ___
