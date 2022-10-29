@@ -4,12 +4,20 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
-  // move to a getstaticprops function
-    const [courses, setCourses] = useState([]);
+  // move to a getstaticprops function?  https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation
+    const [listOfProfessors, setProfessors] = useState([]);
+    const [listOfCourses, setCourses] = useState([]);
 
     useEffect(() => {
         (async () => {
-            const results = await fetch("/api/list").then(response => response.json());
+            const results = await fetch("/api/listProfs").then(response => response.json());
+            setProfessors(results);
+        })();
+    }, []);
+
+    useEffect(() => {
+        (async () => {
+            const results = await fetch("/api/listCourses").then(response => response.json());
             setCourses(results);
         })();
     }, []);
@@ -28,9 +36,9 @@ export default function Home() {
                 </h1>
                 <br />
                 <div className={styles.grid}>
-                    {courses.map(courses => (
-                        <div className={styles.card} key={courses._id}>
-                            <h3>{courses.sectionId}</h3>
+                    {listOfProfessors.map(professors => (
+                        <div className={styles.card} key={professors._id}>
+                            <h3>{professors.name}</h3>
                         </div>
                     ))}
                 </div>
