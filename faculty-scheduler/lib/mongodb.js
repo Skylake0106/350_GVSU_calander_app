@@ -1,3 +1,6 @@
+// Javascript file to connect to MongoDB database
+// Allows connection to be established once and used throughout program
+// Does require .env file to be set up with MongoDB connection string
 import { MongoClient } from "mongodb";
 
 const uri = process.env.NEXT_ATLAS_URI;
