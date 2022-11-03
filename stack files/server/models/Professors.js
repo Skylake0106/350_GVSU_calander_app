@@ -1,10 +1,14 @@
 const mongoose = require("mongoose");
 const ProfessorSchema = new mongoose.Schema({
-    name: {
+    name: { // format is "First Last"
         type: String,
         required: true,
     },
-    email: {
+    lastName: { // last name used for depth rating chart
+        type: String,
+        required: true,
+    },
+    email: { // gvsu email on file
         type: String,
         required: true,
     }
