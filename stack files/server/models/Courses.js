@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
 const CourseSchema = new mongoose.Schema({
-    sectionID: {
+    sectionID: { // unique courseCode + CRN
         type: String,
         required: true,
     },
-    courseCode: {
+    courseCode: { // ex: CIS162
         type: String,
         required: true,
     },
-    courseName: {
+    courseName: { // ex: Computer Science I
         type: String,
         required: true,
     },
@@ -20,50 +20,42 @@ const CourseSchema = new mongoose.Schema({
         type: Number, 
         reuired: true,
     }, 
-    partOfTerm: {
+    partOfTerm: { // ex: 1 - Full Term
         type: String,
         required: true,
     },
-    campusLoc: {
-        type: String,
-        require: true,
-    },
-    instructMeth: {
+    campusLoc: { // ex: (ALL) Allendale
         type: String,
         require: true,
     },
-    sectionStatus: {
-        // changed this to a String for the csv import into Mongo
+    instructMeth: { // Traditional or Online
+        type: String,
+        require: true,
+    },
+    sectionStatus: { // Active or Cancelled
         type: String,
         required: true,
     },
-    sectionAttr: {
+    sectionAttr: { // I-IT, ADC, etc.
         type: String,
-        required: true,
     },
-    meetDays: {
+    meetDays: { // ex: "M, W, F"
         type: String,
-        required: true,
     },
-    meetStartTime: {
+    meetStartTime: { // day & start time of first class
         type: String,
-        required: true,
     },
-    meetEndTime:{
+    meetEndTime:{ // day & end time of first class
         type: String,
-        required: true,
     },
-    meetStartDate: {
+    meetStartDate: { // first day of semester
         type: Date,
-        required: true,
     },
-    meetEndDate: {
+    meetEndDate: { // last day of semester
         type: Date,
-        required: true,
     }
 });
 
-// database collection name
 const CourseModel = mongoose.model("Courses", CourseSchema);
-// make model accessible outside file
+
 module.exports = CourseModel;
