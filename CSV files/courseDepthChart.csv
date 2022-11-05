@@ -1,0 +1,101 @@
+﻿courseCode,courseName,Adams,Alsabbagh,Beach,Bhuse,Bobeldyk,Boit,Bowman,Cao,Carrier,Clay,DeBruine,DeVries,Dowling,Du,Dulimarta,El-Said,Engelsma,Fredericks,Grissom,Kalafut,Kautz,Kotman,Kurmas,Lalejini,Lange,Langley,LeidigJ,LeidigP,Lowell,Mansour,Molloseau,Moore,Nandigam,Patil,Posada,Rafiq,Reynolds,Sawesi,Schymik,Sutton,Tao,Trefftz,Tusch,Wang,Wolffe,Woodman,Woodring
+CIS101,THRIVING IN OUR DIGITAL WORLD,,,2,,1,,,,1,3,1,,,1,,,,,2,1,3,,1,1,1,,,1,2,,3,2,,,,,,,1,,,,,,,3,
+CIS150,INTRO TO COMPUTING,,,2,,1,,,,,3,1,,,1,,2,,,,1,2,,,2,3,,,2,2,,3,,,,,,2,1,2,2,3,,,2,,3,
+CIS159,JAVA PROGRAMMING FOR ENGINEERS ,2,,2,,1,,,,1,,1,1,1,,2,,,,,1,,,2,3,,,,,,,3,2,,2,,,,,,2,,,,2,,,1
+CIS160,LEARN TO CODE IN PYTHON,2,,3,,1,3,2,,2,,1,,1,1,,1,,2,,1,,,1,3,2,,,,2,,3,3,2,3,,1,1,2,1,,1,,,2,2,1,2
+CIS161,COMPUTATIONAL SCIENCE ,,,1,,1,,3,,3,1,1,,2,,,,,,,,,,1,3,,,,,,,3,3,,,,,,,,,,,2,2,3,,1
+CIS162,COMPUTER SCIENCE I,3,,3,,1,,1,,1,2,1,1,1,,1,1,1,,3,1,,3,3,3,,,,,3,,3,3,2,,3,3,,,,2,2,3,2,2,,,3
+CIS163,COMPUTER SCIENCE II,3,,3,,1,,1,,2,,1,1,3,,1,,1,,3,1,,3,3,3,,,,,,,2,3,2,,3,3,,,,2,2,3,,2,,,3
+CIS230,HARDWARE AND SOFTWARE,,,1,,1,,,1,,2,1,,,,,2,,2,,,,,,2,1,,,1,1,,1,1,,,,,3,,,,,,,,,1,1
+CIS231,PROBLEM SOLVING WITH SPREADSHEETS,,,2,3,1,,,,,3,1,,,3,,3,,,,,3,,,1,2,,,2,3,3,3,2,,,1,,3,3,2,2,,,,,,3,
+CIS233,CONCEPTS OF DATABASE SYSTEMS,,,2,,1,,,1,,1,1,,,2,,,,,,,2,,,2,1,,1,2,3,,,2,,3,3,,1,2,2,3,,,2,2,,2,
+CIS237,INTRO TO NETWORK MANAGEMENT,,,2,3,1,,,,,1,1,,,,,3,,,,2,,,,1,1,,,,3,3,,,,,,,2,,,,,,,2,,2,1
+CIS238,INTERNET MEDIA AND PROGRAMMING ,1,,3,,1,,,,,2,1,,,,,,,2,,,3,,,2,3,,,,,,1,1,,,,,,,,,,,,,,2,
+CIS241,SYSTEM PROGRAMMING,1,,1,3,2,,2,2,3,,1,,,,2,1,1,3,1,3,,,3,3,,,,,,,,2,3,1,,,,,1,1,1,3,,3,2,,2
+CIS250,PRINCIPLES OF INFORMATION SYSTEMS ,,,2,,1,,,,,1,,,,1,,,,,,,,,,,3,,,3,,,,,,,,,2,,3,,, ,,,,1,
+CIS253,COBOL,,,,,1,,,,,,1,,,,,,,,,,,,,1,,,1,,,,,2,,,,,1,,1,,,3,,,,,2
+CIS258,INTRODCUTION TO CYBERSECURITY,,,2,3,1,,,,,1,1,,,,,3,,,,3,,,,1,1,,,,,3,2,,,,,,1,1,1,3,,,,3,,1,
+CIS260,APPLICATION DEV IN VISUAL BASIC,,,1,,1,,,,,1,1,,,,,,,,,,,,,2,1,,,,3,,,1,1,1,,,,,1,1,,,,2,,,2
+CIS263,DATA STRUCTURES AND ALGORITHMS,2,,2,,3,,3,1,3,,2,3,,,3,,,2,1,1,,,3,3,,,3,,,,,3,1,3,,3,,1,,2,3,3,,3,,,2
+CIS265,UNDERSTANDING ARTIFICIAL INTELLIGENCE, ,,,,1,,,,,1,,1,,,1,,,,,,,,,,,,1,,,,,3,,1,,,,,,,,,,2,,,1
+CIS290,PROFESSIONAL RESPONSABILITEIS AND PRACTICES,,,1,,1,,,,1,2,2,1,1,,,,,,3,2,,,,2,3,,,2,3,,,,,3,,,,1,,1,,,,,,2,
+CIS310,STRUCTURE & MECH OF SOCIAL NETWORKS,,,,,1,3,2,,2,1,1,,,,,,,,,,,,,2,,,1,,,,,1,,1,,3,,,,,,,,,,1,
+CIS320,VISUALIZATION OF DATA & INFORMATION ,1,,1,,1,3,1,,1,1,3,,3,,,,,,,,,,,2,,,3,1,,,,2,,1,,,,2,1,,,,,,,,2
+CIS321,EXCEL CONCEPTS AND APPLICATIONS II,,,2,,1,,,,,3,1,,,1,,2,,,1,,2,,,1,2,,,1,3,3,,2,,1,,,,1,2,,,,,,,3,
+CIS330,SYSTEMS ANALYSIS AND DESIGN,,,1,,1,,,,,1,1,1,,3,,,,1,,,,,,2,3,,,1,,,,,,3,,,,1,3,,,,,,,,
+CIS331,DATA ANALYSIS TOOLS AND TECHNIQUES,,,,,2,3,,,,3,3,,1,,,,,,,,,,,3,1,,,1,,3,,1,,3,,,,2,1,,,,2,,,,1
+CIS333,DATABASE MGMT & IMPLEMENTATION,,2,,,1,3,,1,,1,1,,,3,,,,2,,,,,,1,1,,3,2,2,,,2,,3,3,,,1,3,3,,,2,2,,1,
+CIS335,DATA MINING,,,,,2,3,,,,,2,,1,1,,,,,,,,,,3,,,1,,,1,,1,,1,,3,,1,,,,,3,1,,,1
+CIS337,NETWORK SYSTEMS MANAGEMENT,,,1,3,1,,,,,,1,,,,,3,,,,2,,,,1,,,,,,3,,,,,,,,,,,,,,2,,1,1
+CIS338 ,WIDE AREA NETWORK ENGINEERING ,,,2,3,1,,,,,,1,,,,,3,,,,1,,,,1,,,,,,,,,,,,,,,,,,,,2,,1,
+CIS339,IT PROJECT MANAGEMENT,,,1,,,,,,,2,1,,,2,,,,,,,,,,1,2,,,,,,,,,,,,2,,2,,,,,2,,1,
+CIS340 ,HEALTHCARE INFORMATION SYSTEMS,,,,,1,,,,,2,2,,,3,,,,,,,,,,1,2,,,,,,,,,,,,,3,,,,,3,,,1,
+CIS343 ,STRUCTURE OF PROGRAMMING LANGUAGES,2,,1,,1,,2,,1,,1,,,,2,,1,1,,,,,3,3,,,,,,,,2,3,2,,,,,      ,,,,,1,,,3
+CIS349,AGILE PROJECT MANAGEMENT,,,,,,,,,,2,1,,,,,,,,,,,,,2,,,,,,,,,,,,,,,2,,,,,,,,
+CIS350,SOFTWARE ENGINEERING,2,,,,,,,,,,1,3,1,,,,,3,1,,,,,2,,,,,,,,,3,,,3,,,,,,,,,,,
+CIS351,COMPUTER ORGANIZATION AND ASSEMBLY,,,,,1,,3,,2,,1,1,,,2,,,1,,2,,,3,2,,,,,,,,3,,,,,,,,2,,,,,3,,1
+CIS353,DATABASE,,3,,,1,1,2,1,2,1,1,,,1,,,,2,,,,,,2,,,2,1,1,,,1,,3,3,,,1,,3,,,2,1,,1,2
+CIS357,MOBILE APPLICATIONS DEVELOPMENT,2,,1,,1,,,,,1,1,,1,,3,,3,1,,,,,1,1,,,,,,,,,,3,,,,,,,,,,,,,2
+CIS358,INFORMATION ASSURANCE,,,,3,1,,,,,,1,,,,,1,,,,3,,,,1,,,,,,,,,,,,,,2,,3,,,,3,,1,1
+CIS360,INFORMATION MANAGEMENT & SCIENCE,,,,,1,2,,,,1,1,,,,,,,,,,,,,2,,,3,1,,,,1,,1,,3,,3,2,,,,,,,1,1
+CIS365,APPLIED ARTIFICIAL INTELLIGENCE,1,,,,3,,2,,2,,2,1,,,1,,,,,,,,,3,,,1,,,,,3,,1,,,2,1,,,,,,1,2,,
+CIS367,COMPUTER GRAPHICS,,,1,,1,,2,,2,1,1,,,,3,,,3,1,,,,,1,,,,,,,,1,,,,,,,,,,,,,2,1,2
+CIS368,USABILITY DESIGN AND EVALUATION,,,1,,1,,1,,1,1,1,,3,1,,,,,3,,,,,2,,,,1,,,,1,,1,,,,2,,,,,,,,,2
+CIS371,WEB APPLICATION PROGRAMMING,2,,2,,1,,,,,1,1,,1,,3,,1,2,,,,,3,2,1,,,,,,,1,1,3,,,,,,,,,,,,1,2
+CIS373,PERVASIVE COMPUTING,1,,,,1,,,3,,2,1,,,,,,,3,,,,,,2,,,,,,,,2,,,,,,,,,,,,1,,,1
+CIS375,WIRELESS NETWORKING SYSTEMS,,,,3,1,,,,,,1,,,,,3,,,,1,,,,1,,,,,,,,,,,,,,,,,,,,,,1,
+CIS376,GAME PROGRAMMING TECHNIQUES AND ALGORITHIMS,3,,3,,1,,,,,1,,,,,3,,,3,,,,,,,,,,,,,,1,,,,,,,,,,,2,,,,3
+CIS378,APPLIED MACHINE LEARNING,,,,,3,3,2,,3,,,,1,,,,,,,,,,,,,,,,,,,3,,1,,2,2,,,,,,2,,,,
+CIS418,SECURE SOFTWARE ENGINEERING,,,,,,,,,,,1,1,,,,,,2,,1,,,,1,,,,,,,,,3,,,,,,,,,,,,,,
+CIS430,COMPUTER AND CYBER FORENSICS,,,,,1,,,,,,1,,,,,,,,,1,,,,1,,,,,,1,,,,,,,,,,,,,,3,,,2
+CIS437,DISTRIBUTED COMPUTING,1,,,,3,,,3,,,1,,,,1,,2,,,1,,,1,2,,,,,,,,1,,1,,1,,,,,,,,3,,,2
+CIS443,SOFTWARE DEVELOPMENT TOOLS,,,,,,,,,,1,1,,,,2,,,,,,,3,,2,1,,,,,,,1,1,,,,,,,,,,,,,,1
+CIS450,IS PROJECT MANAGEMENT,,,,,,,,,,2,1,3,,3,,,,,,,,,,1,2,,,2,,,,,,,,,2,,3,,,,,,,,1
+CIS451,COMPUTER ARCHITECTURE,,,,,1,,2,,1,,1,,,,1,,,3,,2,,,2,1,,,,,,,,1,,,,,,,,,,3,,,3,,1
+CIS452,OPERATING SYSTEMS CONCEPTS,,,,,3,,3,,2,,1,,,,3,,,,,2,,,1,2,,,,,,,,3,,,,,,,,3,,,,1,3,,2
+CIS453,ETHICAL HACKING,,,,3,1,,,,,,1,,,,,3,,,,2,,,,,,,,,,3,,,1,,,,,,,,,,,3,,,2
+CIS455,APPLIED CRYPTOGRAPHY ,,,,3,2,,,,,,1,,,,1,2,,,,3,,,,1,,,,,,3,,,,,,,,,,2,,,,2,,,
+CIS456,REVERSE ENGINEEERING AND MALWARE ANALYSIS,,,,,1,,,,,,1,,,,,,,,,2,,,,1,,,,,,,,,,,,,,,,,,,,,,,1
+CIS457,DATA COMMUNICATIONS,,,,3,3,,3,,1,2,1,,,,,3,,,,3,,,1,2,,,,,,2,,1,,,,,,,,1,,2,,,,,2
+CIS458,SYSTEM SECURITY ,,,,3,1,,,,,,1,,,,,3,,,,2,,,,1,,,,,,3,,,,,,,,,,3,,,,3,,1,2
+CIS460,MANAGEMENT OF INFORMATION SYSTEMS,,,,,1,,,,,1,1,,,,,,,,,,,,,1,1,,,3,,,,,,,,,,2,3,,,,,,,1,
+CIS461,COMPILER DESIGN AND CONSTRUCTION,2,,,,1,,1,,,,1,3,,,,,,2,,1,,3,1,2,,,,,,,,,1,,,,,,,,,2,,,,,2
+CIS462,INFORMATION TECHNOLOGY CAPSTONE PROJECT,,,,3,1,,,,,,1,,,,,3,,,,,,,,2,3,,,2,,3,,,,,,,,2,,1,,,,3,,1,
+CIS463,INFORMATION SYSTEMS CAPSTONE PROJECT,,,,,1,,,,,,1,,,1,,3,,,,,,,,1,3,,,2,,,,,,,,,,2,,1,,,,,,1,
+CIS465,AUTOMATA  & COMPUTATION,,,,,3,,2,,2,,1,3,,,3,,,2,,2,,3,2,3,,,,,,,,1,,,,,,,,,,,,1,,,
+CIS467,COMPUTER SCIENCE CAPSTONE PROJECT,3,,,,1,,1,,1,,1,,1,,,,3,2,,,,,,3,,,,,,,,2,,,,,,,,,,,,1,,,
+CIS468,CYBERSECURITY CAPSTONE PROJECT,,,,3,1,,,,,,1,,,,,3,,,,2,,,,1,,,,,,3,,,,,,,,1,,3,,,,3,,,
+CIS500,FUNDAMENTALS OF SOFTWARE PRACTICE,2,,,,1,,1,,1,,1,2,1,,,,1,,1,,,,2,2,,,,,,,,3,3,,,,,,,,1,1,,,1,,
+CIS511,NETWORKING FUNDAMENTALS,2,,,,3,,,1,,,,,,,1,,,,,2,,,1,,,,,,,,,1,,,,,,,,,,1,,,,1,
+CIS512,DATABASE FUNDAMENTALS,2,,,,1,3,,1,,,,,,,,,,1,,,,,,,,,1,,,,,2,1,3,,,,,,3,,,,,,,
+CIS518,SECURE SOFTWARE ENGINEERING: ,,,,,,,,,,,1,1,,,,,,,,1,,,,1,,,,,,,,,3,,,,,,,,,,,1,,,
+CIS553,ETHICAL HACKING,,,,3,1,,,,,,,,,,,3,,,,2,,,,,,,,,,3,,,1,,,,,,,,,,,3,,,
+CIS555,APPLIED CRYPTOGRAPHY ,,,,3,2,,,,,,1,,,,,2,,,,3,,,,1,,,,,,3,,,,,,,,,,2,,,,2,,,
+CIS611,SOFTWARE ENGINEERING,1,,,,,,,,,,1,3,,,,,,3,,,,,,2,,,,,,,,,2,,,,,,,,,,, ,,,
+CIS612,REQUIREMENTS SPECIFICATION,,,,,,,,,,,1,3,,,,,,3,,,,,,1,,,,,,,,,1,,,,,,,,,,,,,,
+CIS613,SOFTWARE TESTING,,,,,,,,,,,1,3,,,,,,3,,,,,,2,,,,,,,,,2,,,,,,,,,,,,,,
+CIS615,INFORMATION SECURITY PRINCIPLES: ,,,,2,1,,,,,,1,,,,,3,,,,3,,,,1,,,,,,2,,,,,,,,,,3,,,,2,,,
+CIS616,DATA SECURITY AND PRIVACY,,,,3,1,,,,,,1,,,,,3,,,,2,,,,1,,,,,,3,,,,,,,,,,3,,,,3,,,
+CIS617,DIGITAL FORENSICS AND INVESTIGATIONS,,,,3,1,,,,,,1,,,,,,,,,1,,,,1,,,,,,1,,,,,,,,,,,,,,3,,,
+CIS619,DATA ANALYTICS FOR CYBERSECURITY,,,,,1,1,,,,,,,,,,,,,,1,,,,,,,,,,3,,,,,,3,,,,,1,,,,,,
+CIS622,SOFTWARE DESIGN METHODOLOGIES,1,,,,,,,,,,1,3,,,,,,,,,,,,2,,,,,,,,1,1,,,,,,,,1,,,,,,
+CIS623,GRAPHICAL USER INTERFACE DESIGN,,,,,1,,,,,1,1,,,,,,,,1,,,,,1,,,,,,,,1,1,,,,,,,,,,,,,,
+CIS635,KNOWLEDGE DISC & DATA MINING,,,,,1,,1,,1,,3,,,,,,,,,,,,,2,,,1,,,1,,1,,1,,,,,,,,,3,,,,
+CIS641,MGMT OF SOFTWARE DEVELOPMENT,,,,,,,,,,,1,2,,,,,,3,,,,,,1,,,,1,,,,,,,,,,,3,,,,,,,,
+CIS642,SOFTWARE PROJECT MANAGEMENT,,,,,,,,,,1,1,,,,,,,,,,,,,1,,,,1,,,,,,,,,1,,3,,,,,,,,
+CIS643,INFORMATION SYSTEMS POLICY,,,,,1,,,,,,1,,,,,,,,,,,,,1,,,,3,,,,,,,,,,,3,,,,,,,,
+CIS654,COMPUTER NETWORKING,,,,3,3,,,1,,,1,,,,,3,,,,3,,,1,1,,,,,,3,,,,,,1,,,,,,2,,,,,
+CIS656,DISTRIBUTED SYSTEMS,1,,,,3,,,3,,,1,,,,,,2,,,,,,1,2,,,,,,,,1,,,,1,,,,,,,,2,2,,
+CIS657,MOBILE APPLICATIONS DEVELOPMENT,1,,,,1,,,,,,1,,,,3,,3,,,,,,1,1,,,,,,,,,,3,,,,,,,,,,,,,
+CIS658,WEB ARCHITECTURES,1,,,,1,,,,,,1,,1,,2,,2,2,,,,,3,2,,,,,,,,1,,2,,,,,,,,,,,,,
+CIS660,INFORMATION MANAGEMENT & SCIENCE,,,,,1,3,,,,,3,,,,,,,,,,,,,2,,,3,,,,,,,2,,3,,3,2,1,,,,,,,
+CIS661 ,MEDICAL & BIOINFORMATICS,,,,,1,,,,,1,3,,,,,,,,,,,,,2,,,3,,,,,,,,,,,3,,,,,3,,,,
+CIS665,CLINICAL INFORMATION SYSTEMS,,,,,1,,,,,1,2,,,,,,,,,,,,,1,,,,,,,,,,,,,,3,,,,,3,,,,
+CIS671,INFORMATION VISUALIZATION,1,,,,1,,,,,,3,,3,,,,,,,,,,,3,,,3,,,,,2,,2,,,,1,,,,,,,,,
+CIS672,COMPUTER SYSTEMS ARCHITECTURE,1,,,,1,,1,,,,1,,,,,,,,,2,,,,1,,,,,,,,2,,,,,,,,,,2,,,3,,
+CIS673,PRINCIPLES OF DATABASE DESIGN,,2,,,1,,,1,,,1,,,,,,,,,,,,,1,,,1,,,,,,,3,,,,,,,,,,1,,,
+CIS675,COMPILER CONSTRUCTION,3,,,,1,,,,,,1,3,,,,,,1,,1,,,1,2,,,,,,,,,,,,,,,,,,2,,,,,
+CIS676,DATABASE SYSTEMS PERFORMANCE,,1,,,1,,,,,,1,,,,,,,,,,,,,1,,,1,,,,,,,2,,,,,,,,,,,,,
+CIS677,HIGH-PERFORMANCE COMPUTING,,,,,3,,3,,3,,3,3,,,,,,,,,,,,2,,,1,,,,,1,,1,,,,,,,,3,,,3,,
+CIS678,MACHINE LEARNING,,,,,3,3,2,,3,,3,,,,,,,,,,,,,2,,,,,,,,3,,1,,2,,1,,1,,,3,,3,,
+CIS679,SPECIAL TOPICS IN DATABASE MGMT SYSTEMS,,1,,,1,2,,1,,,1,,,,,,,,,,,,,1,,,3,,,,,,,2,,,,,,,,,,,,,
