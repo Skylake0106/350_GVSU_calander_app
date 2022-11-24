@@ -9,11 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "@fullcalendar/common": "^5.11.3",
+    "@fullcalendar/core": "^5.11.3",
+    "@fullcalendar/daygrid": "^5.11.3",
+    "@fullcalendar/interaction": "^5.11.3",
+    "@fullcalendar/list": "^5.11.3",
+    "@fullcalendar/react": "^5.11.3",
+    "@fullcalendar/timegrid": "^5.11.3",
+    "@zeit/next-css": "^0.0.6",
+    "@zeit/next-sass": "^0.0.6",
     "mongodb": "^4.11.0",
     "mongoose": "^6.6.7",
-    "next": "^12.3.1",
+    "next": "^12.3.3",
+    "next-transpile-modules": "^10.0.0",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "reactjs-popup": "^2.0.5",
+    "table": "^6.8.1"
   },
   "devDependencies": {
     "eslint": "8.25.0",

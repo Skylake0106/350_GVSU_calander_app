@@ -9,7 +9,7 @@ export default async function handler(request, response) {
     // Get first 20 courses from MongoDB
     // insert any query parameters into the find() function
     const results = await collection.find({})
-    .limit(20).toArray();
+    .toArray();
     
     // Return the array of courses as JSON
     response.status(200).json(results);

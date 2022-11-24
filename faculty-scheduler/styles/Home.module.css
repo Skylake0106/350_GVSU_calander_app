@@ -1,8 +1,42 @@
+.alignCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shiftRight {
+  display: flex;
+  transform: translateX(60%) translateY(-100%);
+  color: rgb(10, 138, 250);
+  background-color: #111;
+}
+
+.gvsuHeader {
+  color: rgb(10, 138, 250);
+  background-color: #111;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blue {
+  color: rgb(10, 138, 250);
+  background-color: #111;
+}
+
+.shiftLeft {
+  display: flex;
+  transform: translateX(-60%);
+  color: rgb(10, 138, 250);
+  background-color: #111;
+}
+
 .container {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 .main {
+  background-color: black;
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
@@ -12,6 +46,110 @@
   align-items: center;
 }
 
+.align {
+  transform: translateX(100%);
+}
+
+.header {
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(100%);
+}
+
+.toProfessorButton {
+  display: flex;
+  flex: 1;
+  align-items: right;
+  justify-content: right;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.toProfessorButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
+}
+
+.courses {
+  color: blue;
+}
+
+.toCalendarButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.toCalendarButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
+}
+
+.toCalendarFromCoursesButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  transform: translateX(570%) translateY(-105%);
+}
+.toCalendarFromCoursesButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
+}
+
+.toCoursesButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  transform: translateX(595%) translateY(-100%);
+}
+.toCoursesButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
+}
+
+.asignButton {
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  transform: translateX(50%);
+}
+.asignButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
+}
+
+.profPopup{
+  color: black;
+  background-color: blue;
+}
 .footer {
   display: flex;
   flex: 1;
@@ -19,6 +157,41 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+}
+
+.assignProfessorsButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.assignProfessorButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
+}
+
+.submitNameButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  transform: translateX(80%);
+}
+.submitNameButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
 }
 
 .footer a {
@@ -70,12 +243,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 .card {
-  margin: 1rem;
-  padding: 1.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   text-align: left;
   color: inherit;
   text-decoration: none;
