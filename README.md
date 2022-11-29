@@ -49,7 +49,7 @@ We decided that we would stick with the tried and true MERN tech stack with Next
 
 
 <p align="center">
-  <img width="50%" alt="Architecture Design" src="/Images/project_architecture.JPG">
+  <img width="50%" alt="Architecture Design" src="/Images/architecturepicture.JPG">
 </p>
 
 ### 3.1 Use Case Diagram
