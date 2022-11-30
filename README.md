@@ -61,7 +61,7 @@ Or at least this was the initial belief, during the course of the project after 
 
 ### 3.2 Class Diagram
 <p align="center">
-  <img width="75%" alt="UML class diagram" src="https://user-images.githubusercontent.com/94251267/193959366-363cb30a-a0aa-470e-bcbc-f43adebb5b1c.png">
+  <img width="75%" alt="UML class diagram" src="https://github.com/Skylake0106/CIS_Faculty_Scheduling_Assistant/blob/0d7181662128ff3426dc8d2d7544001a40f472a7/Images/UML%20class%20updated.png">
 </p>
 
 ### 3.3 Sequence Diagram
