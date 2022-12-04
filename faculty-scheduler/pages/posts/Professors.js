@@ -36,7 +36,7 @@ function Professors() {
           // fetch the list of professors from the API
           const results = await fetch("/../api/listProfs").then(response => response.json());
           setProfessors(results);
-          console.log(listOfProfessors.legnth)
+          console.log(listOfProfessors.length)
       })();
   }, []);
 
@@ -79,7 +79,7 @@ function Professors() {
                         </div>
                     ))}
                 </div>
-        {/*butttons to calendar and courses pages*/}
+        {/*buttons to calendar and courses pages*/}
             </main>
         <div className={styles.blue}><button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button> 
         <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
