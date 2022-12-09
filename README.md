@@ -90,3 +90,8 @@ ___
 </p>
 
 ### Risks Analysis And Retrospective
+
+1. What were the risks, what were the problems, how did you deal with them during the project?
+  A couple of our risks include choosing a project that was so heavilliy data focused switching our database service partway through. The main problem we encountered was getting our api requests, after switching to Oracle. In order to Populate our pages we needed api request to function, however, Oracle could not send the data fast enough for the objects to render, causing undeffined behavior in our program. We dealt with this by attempting to find a workaround for this issue(cont).
+2. What was done and what could have been done better?
+  
