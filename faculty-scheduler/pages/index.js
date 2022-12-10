@@ -28,10 +28,21 @@ export default function Home() {
         })();
     }, []);
 
+    useEffect(() => {
+        fetch('/api/listCourses')
+          .then(response => response.json())
+          .then(data => {
+            setCourses(data);
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      }, []);
+
     return (
         <><div className={styles.gvsuHeader}>
             GVSU Faculty Scheduler
-        </div><div className={styles.blue}>
+        </div><div className={styles.black}>
                 {/*Calls the Calendar constant and builds the calendar*/}
                 <Calendar />
                 <button className={styles.toProfessorButton}> <Link href="/posts/Professors">To Professors page</Link> </button>

@@ -27,7 +27,6 @@ function Professors() {
   
     // TODO: set up attributes for courses - change type?
     const [priority, setPriority] = useState(0);
-
     const [listOfProfessors, setProfessors] = useState([]);
     const [listOfDepths, setDepths] = useState([]);
 
@@ -49,23 +48,49 @@ function Professors() {
         })();
     }, []);
 
+    async function getCourseDepths(profLastName) {
+        console.log(courseCode);
+        const results = await fetch("https://apex.oracle.com/pls/apex/facultyschedulerasst/courses/prof_depth_list" + profLastName).then(response => response.json());
+        setDepths(results);
+    }
+    
+    //return professor based on last name input of professor
+    const profForm = () => {
+        const [courses, setCourses] = useState([]);
+        const [name, setName] = useState("");  
+        const [result, setResult] = useState(null);
+      
+        const handleSubmit = event => {
+          event.preventDefault();
+      
+          fetch("/../api/listCourses")
+          .then(response => response.json())
+          .then(data => {
+            setResult(data);
+          })
+          .catch(error => {
+            console.log(error);
+          });
+        };
+      
+        return (
+          <form onSubmit={handleSubmit}>
+            <label>
+              Last Name:
+              <input type="text" value={name} onChange={event => setName(event.target.value)} />
+            </label>
+            <button type="submit">Submit</button>
+            {result && <p>Result: {result}</p>}
+          </form>
+        );
+      };
 
     return (
-        <div>
+        <div className={styles.black}>
             {/* Main content */}
             <main className={styles.main}>
                 <h1 className={styles.gvsuHeader}>Welcome To The Professor's Page, Please Type Your Name</h1>
-                <form>
-                <label className={styles.shiftLeft}>
-                First Name:
-                <input type="text" name="firstName" required />
-                </label>
-                <label className={styles.shiftRight}>
-                Last Name:
-                <input type="text" name="lastName" required />
-                </label>
-                <input className={styles.submitNameButton} type="submit" value="Submit" />
-                 </form>
+                {profForm()}
                 <div className={styles.grid}>
                     {/* Lists out all professors by their name and maps a popup with all courses codes, doesnt list all sections Hide this later*/}
                     {listOfProfessors.map(professors => (
@@ -81,7 +106,7 @@ function Professors() {
                 </div>
         {/*buttons to calendar and courses pages*/}
             </main>
-        <div className={styles.blue}><button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button> 
+        <div className={styles.black}><button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button> 
         <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
         </div>
         </div>
