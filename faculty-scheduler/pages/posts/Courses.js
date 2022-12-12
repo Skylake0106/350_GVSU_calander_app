@@ -52,21 +52,25 @@ axios.put('https://apex.oracle.com/pls/apex/facultyschedulerasst/sectiontable/ci
       };
     
       return (
+        <div>
         <form className={styles.alignCenter}onSubmit={handleSubmit}>
           <div className={styles}>
           <input
             type="text"
             value={inputValue}
+            palceholder="Enter Course Code"
             onChange={(event) => setInputValue(event.target.value)}/>
           <button type="submit">Submit</button>
           </div>
+          </form>
+          <h1></h1>
           
           <div className={styles.grid}>
           {apiResponse.map(courses => (
             <div key={courses.sectionid} className={styles.card}>
                 <text className={styles.courseData}>
                   <h1>{courses.coursecode} - {courses.sectionnum}</h1>
-                  <h3>Current Professor: {courses.lastname}</h3>
+                  <h3>Current Professor: {courses.lastname ? <p className={styles.isProf}>{courses.lastname}</p> : <p className={styles.noProf}>NO PROFESSOR</p>}</h3>
                   <p>Available Professors:</p>
                   {courseDepths.map(depths => (
                     <ul>
@@ -78,6 +82,52 @@ axios.put('https://apex.oracle.com/pls/apex/facultyschedulerasst/sectiontable/ci
             </div>
           ))}
           </div>
+        </div>
+      );
+    }
+
+    function changeProfForm() {
+      const [courseCode, setCourseCode] = useState("");
+      const [sectionNum, setSectionNum] = useState("");
+      const [lastName, setLastName] = useState("");
+      const [apiResponse, setApiResponse] = useState([]);
+    
+      const handleSubmit = async (event) => {
+        event.preventDefault();
+        setApiResponse([]);
+        axios.put(`https://apex.oracle.com/pls/apex/facultyschedulerasst/sectiontable/cis/${courseCode}/${sectionNum}`, {lastname: lastName})
+        .then(response => response.json())
+          .then(data => {
+            setApiResponse(data);
+          })
+        .catch(error => {
+            console.log(error);
+        });
+      };
+    
+      return (
+        <form className={styles.alignCenter}onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={courseCode}
+            placeholder="Course Code"
+            onChange={(event) => setCourseCode(event.target.value)}
+          />
+          <input
+            type="text"
+            value={sectionNum}
+            placeholder="Section Number"
+            onChange={(event) => setSectionNum(event.target.value)}
+          />
+          <input
+            type="text"
+            value={lastName}
+            placeholder="Last Name"
+            onChange={(event) => setLastName(event.target.value)}
+          />
+          <button type="submit">Submit</button>
+          <div>
+          </div>
         </form>
       );
     }
@@ -88,10 +138,15 @@ axios.put('https://apex.oracle.com/pls/apex/facultyschedulerasst/sectiontable/ci
             <h1></h1>
                 <button className={styles.toProfessorButton}> <Link href="/posts/Professors">Professors Page</Link> </button>
                 <button className={styles.toCalendarFromCoursesButton}> <Link href="/">Calendar Page</Link> </button>
+                <h1 className={styles.gvsuHeader}>Assign a Professor Here</h1>
+                {changeProfForm()}
+                <h1></h1>
                 <h1 className={styles.gvsuHeader}>Input a CIS Course Code Below!</h1>
                 <h4 className={styles.gvsuHeader}>Example: CIS163</h4>
-                <h1></h1>
                 {courseForm()}
+                <h1></h1>
+                
+                
                 
             </div>
     )

@@ -57,6 +57,7 @@ function Professors() {
       };
     
       return (
+        <div>
         <form className={styles.alignCenter}onSubmit={handleSubmit}>
           <input
             type="text"
@@ -64,20 +65,24 @@ function Professors() {
             onChange={(event) => setInputValue(event.target.value)}
           />
           <button type="submit">Submit</button>
+          </form>
           <div>
           {apiResponse.map(professors => (
             <div key={professors.items} className={styles.gvsuHeaders}>
                 <text className={styles.courseData}>
-                  --Professor: {professors.lastname}
+                  <h1>Professor: {professors.lastname}</h1>
                 </text>
             </div>
           ))}
           </div>
-        </form>
+          </div>
       );
     }
 
     return (
+      <div>
+      <div className={styles.black}><button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button> </div>
+      <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
         <div className={styles.black}>
             {/* Main content */}
             <main className={styles.main}>
@@ -85,8 +90,6 @@ function Professors() {
                 {profForm()}
                 {/*buttons to calendar and courses pages*/}
                 </main>
-        <div className={styles.black}><button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button> 
-        <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
         </div>
         </div>
     );

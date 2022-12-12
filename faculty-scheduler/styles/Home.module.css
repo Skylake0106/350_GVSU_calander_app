@@ -109,8 +109,7 @@
 }
 
 .toCoursesButton {
-  display: flex;
-  flex: 1;
+  float: right;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -119,7 +118,6 @@
   border-radius: 10px;
   transition-duration: 0.2s;
   cursor: pointer;
-  transform: translateX(595%) translateY(-100%);
 }
 .toCoursesButton:hover {
   color: white;
@@ -263,7 +261,15 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1000px;
+  max-width: 100%;
+}
+
+.noProf {
+  color: red;
+}
+
+.isProf {
+  color: green;
 }
 
 .card {
