@@ -12,8 +12,8 @@
 
 .gvsuHeader {
   color: rgb(10, 138, 250);
-  background-color: #111;
-  font-size: 2rem;
+  background-color: black;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,6 +192,33 @@
 .submitNameButton:hover {
   color: white;
   background-color: rgb(10, 138, 250);
+}
+
+.submitCourseCodeButton {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.submitCourseCodeButton:hover {
+  color: white;
+  background-color: rgb(10, 138, 250);
+}
+
+.submitCourseCodeForm {
+  color: white;
+  background-color: black;
+}
+
+.courseData {
+  color: white;
+  transform: translateX(30%);
 }
 
 .footer a {
