@@ -3,8 +3,8 @@ import axios from 'axios';
 export default async (req, res) => {
     const { id } = req.query;
     try {
-    // API gets one professor based on id
-    const url = 'https://apex.oracle.com/pls/apex/facultyschedulerasst/proftable/cis/' + id;
+    // API gets one depth rating for a professor by prof ID
+    const url = 'https://apex.oracle.com/pls/apex/facultyschedulerasst/depthchart/cis/' + id;
     const response = await axios.get(url);
     const data = response.data.items;
 

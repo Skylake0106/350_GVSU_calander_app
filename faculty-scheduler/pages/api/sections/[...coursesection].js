@@ -3,7 +3,6 @@ import axios from 'axios';
 export default async (req, res) => {
     const { coursesection } = req.query;
     // print out the coursesection
-    console.log(coursesection);
     try {
     // API gets one course from coursetable
     let url = '';
