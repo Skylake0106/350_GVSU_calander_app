@@ -12,21 +12,6 @@ export default function Home() {
     const [listOfCourses, setCourses] = useState([]);
 
     // useEffect hook to run when page loads
-    useEffect(() => {
-        (async () => {
-            // fetch the list of professors from the API
-            const results = await fetch("/api/listProfs").then(response => response.json());
-            setProfessors(results);
-        })();
-    }, []);
-
-    useEffect(() => {
-        (async () => {
-            // fetch the list of courses from the API
-            const results = await fetch("/api/listCourses").then(response => response.json());
-            setCourses(results);
-        })();
-    }, []);
 
     useEffect(() => {
         fetch('/api/listCourses')

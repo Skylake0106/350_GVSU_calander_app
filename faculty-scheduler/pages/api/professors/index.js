@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 export default async (req, res) => {
     try {
       const response = await axios.get('https://apex.oracle.com/pls/apex/facultyschedulerasst/proftable/cis/');

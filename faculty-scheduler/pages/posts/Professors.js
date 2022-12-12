@@ -31,81 +31,60 @@ function Professors() {
     const [listOfDepths, setDepths] = useState([]);
 
     useEffect(() => {
-      (async () => {
-          // fetch the list of professors from the API
-          const results = await fetch("/../api/listProfs").then(response => response.json());
-          setProfessors(results);
-          console.log(listOfProfessors.length)
-      })();
-  }, []);
-
-   useEffect(() => {
-        (async () => {
-            // fetch the list of depths from the API
-            const results = await fetch("/../api/listDepths").then(response => response.json());
-            setDepths(results);
-            console.log(listOfDepths.length);
-        })();
+      fetch('../api/depths/')
+        .then(response => response.json())
+        .then(data => {
+          setCourses(data);
+        })
+        .catch(error => {
+          console.log(error);
+        });
     }, []);
 
-    async function getCourseDepths(profLastName) {
-        console.log(courseCode);
-        const results = await fetch("https://apex.oracle.com/pls/apex/facultyschedulerasst/courses/prof_depth_list" + profLastName).then(response => response.json());
-        setDepths(results);
-    }
-    
+
     //return professor based on last name input of professor
-    const profForm = () => {
-        const [courses, setCourses] = useState([]);
-        const [name, setName] = useState("");  
-        const [result, setResult] = useState(null);
-      
-        const handleSubmit = event => {
-          event.preventDefault();
-      
-          fetch("/../api/listCourses")
-          .then(response => response.json())
-          .then(data => {
-            setResult(data);
-          })
-          .catch(error => {
-            console.log(error);
-          });
-        };
-      
-        return (
-          <form onSubmit={handleSubmit}>
-            <label>
-              Last Name:
-              <input type="text" value={name} onChange={event => setName(event.target.value)} />
-            </label>
-            <button type="submit">Submit</button>
-            {result && <p>Result: {result}</p>}
-          </form>
-        );
+    function profForm() {
+      const [inputValue, setInputValue] = useState("");
+      const [apiResponse, setApiResponse] = useState([]);
+    
+      const handleSubmit = async (event) => {
+        event.preventDefault();
+        setApiResponse([]);
+        const response = await fetch(`http://localhost:3000/api/professors/${inputValue}`);
+        const data = await response.json();
+        setApiResponse(data);
+        console.log(apiResponse);
       };
+    
+      return (
+        <form className={styles.alignCenter}onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(event) => setInputValue(event.target.value)}
+          />
+          <button type="submit">Submit</button>
+          <div>
+          {apiResponse.map(professors => (
+            <div key={professors.items} className={styles.gvsuHeaders}>
+                <text className={styles.courseData}>
+                  --Professor: {professors.lastname}
+                </text>
+            </div>
+          ))}
+          </div>
+        </form>
+      );
+    }
 
     return (
         <div className={styles.black}>
             {/* Main content */}
             <main className={styles.main}>
-                <h1 className={styles.gvsuHeader}>Welcome To The Professor's Page, Please Type Your Name</h1>
+                <h1 className={styles.gvsuHeader}>Welcome To The Professor's Page, Please Input Professor ID To View Data</h1>
                 {profForm()}
-                <div className={styles.grid}>
-                    {/* Lists out all professors by their name and maps a popup with all courses codes, doesnt list all sections Hide this later*/}
-                    {listOfProfessors.map(professors => (
-                        <div className={styles.card} key={professors._id}>
-                                <Popup trigger={<button className={styles.card}> {professors.name} </button>}>
-                                  {/* maps out a popup for each professor if they have a current depth rating for a course still need to figure out this, probably create a new list api*/}
-                                    {listOfDepths.map(depths => (
-                                      <div key = {depths._id}> <text className={styles.courses}> {depths.courseCode} {depths.Kurmas}</text></div>
-                                    ))}
-                                </Popup>
-                        </div>
-                    ))}
-                </div>
-        {/*buttons to calendar and courses pages*/}
-            </main>
+                {/*buttons to calendar and courses pages*/}
+                </main>
         <div className={styles.black}><button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button> 
         <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
         </div>
