@@ -60,8 +60,6 @@
 }
 
 .toProfessorButton {
-  display: flex;
-  flex: 1;
   align-items: right;
   justify-content: right;
   font-size: calc(10px + 2vmin);
@@ -70,6 +68,7 @@
   border-radius: 10px;
   transition-duration: 0.2s;
   cursor: pointer;
+  margin: 0.5rem 1rem;
 }
 .toProfessorButton:hover {
   color: white;
@@ -81,10 +80,7 @@
 }
 
 .toCalendarButton {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  float: left;
   font-size: calc(10px + 2vmin);
   color: white;
   background-color: black;
@@ -98,17 +94,14 @@
 }
 
 .toCalendarFromCoursesButton {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
+  float: right;
   font-size: calc(10px + 2vmin);
   color: white;
   background-color: black;
   border-radius: 10px;
   transition-duration: 0.2s;
   cursor: pointer;
-  transform: translateX(570%) translateY(-105%);
+  margin: 0.5rem 1rem;
 }
 .toCalendarFromCoursesButton:hover {
   color: white;

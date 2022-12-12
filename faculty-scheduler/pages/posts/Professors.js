@@ -50,7 +50,7 @@ function Professors() {
       const handleSubmit = async (event) => {
         event.preventDefault();
         setApiResponse([]);
-        const response = await fetch(`http://localhost:3000/api/professors/${inputValue}`);
+        const response = await fetch(`/api/professors/${inputValue}`);
         const data = await response.json();
         setApiResponse(data);
         console.log(apiResponse);

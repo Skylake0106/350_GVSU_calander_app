@@ -19,6 +19,7 @@
     "@fullcalendar/timegrid": "^5.11.3",
     "@zeit/next-css": "^0.0.6",
     "@zeit/next-sass": "^0.0.6",
+    "axios": "^1.2.1",
     "next": "^12.3.3",
     "next-transpile-modules": "^10.0.0",
     "node-sass": "^8.0.0",

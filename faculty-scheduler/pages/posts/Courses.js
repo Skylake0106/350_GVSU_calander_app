@@ -24,7 +24,7 @@ function Courses() {
           });
       }, []);
 
-      axios.put('https://apex.oracle.com/pls/apex/facultyschedulerasst/sectiontable/cis/${coursecode}/${sectionnum}, {lastname: ${lastname}}')
+axios.put('https://apex.oracle.com/pls/apex/facultyschedulerasst/sectiontable/cis/${coursecode}/${sectionnum}, {lastname: ${lastname}}')
 .then(response => {
   // handle success
 })
@@ -42,8 +42,8 @@ function Courses() {
         event.preventDefault();
         setApiResponse([]);
         setCourseDepths([]);
-        const response = await fetch(`http://localhost:3000/api/sections/${inputValue}`);
-        const response2 = await fetch(`http://localhost:3000/api/${inputValue}`);
+        const response = await fetch(`/api/sections/${inputValue}`);
+        const response2 = await fetch(`/api/${inputValue}`);
         const data = await response.json();
         const data2 = await response2.json();
         setApiResponse(data);
@@ -53,23 +53,25 @@ function Courses() {
     
       return (
         <form className={styles.alignCenter}onSubmit={handleSubmit}>
+          <div className={styles}>
           <input
             type="text"
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}/>
           <button type="submit">Submit</button>
-          <div>
+          </div>
+          
+          <div className={styles.grid}>
           {apiResponse.map(courses => (
-            <div key={courses.sectionid} className={styles.gvsuHeaders}>
+            <div key={courses.sectionid} className={styles.card}>
                 <text className={styles.courseData}>
-                  Section ID: {courses.sectionid}
-                  --Section: {courses.sectionnum}
-                  --Current Asigned Professor: {courses.lastname}
+                  <h1>{courses.coursecode} - {courses.sectionnum}</h1>
+                  <h3>Current Professor: {courses.lastname}</h3>
+                  <p>Available Professors:</p>
                   {courseDepths.map(depths => (
-                    <div>
-                      --Avaliable Professor: {depths.lastname}
-                      --Course Depth: {depths.depthrate}
-                    </div>
+                    <ul>
+                      <li>{depths.lastname}   -   {depths.depthrate}</li>
+                    </ul>
                   ))}
                   <br />
                 </text>
@@ -83,11 +85,14 @@ function Courses() {
 
     return(
             <div className={styles.black}>
-                <h1 className={styles.gvsuHeader}>Choose a Course and Section to Select an Available Professor For the Course In the form of CISxxx.</h1>
+            <h1></h1>
+                <button className={styles.toProfessorButton}> <Link href="/posts/Professors">Professors Page</Link> </button>
+                <button className={styles.toCalendarFromCoursesButton}> <Link href="/">Calendar Page</Link> </button>
+                <h1 className={styles.gvsuHeader}>Input a CIS Course Code Below!</h1>
+                <h4 className={styles.gvsuHeader}>Example: CIS163</h4>
                 <h1></h1>
                 {courseForm()}
-                <button className={styles.toProfessorButton}> <Link href="/posts/Professors">To Professors page</Link> </button>
-                <button className={styles.toCalendarFromCoursesButton}> <Link href="/">To Calendar page</Link> </button>
+                
             </div>
     )
 }
