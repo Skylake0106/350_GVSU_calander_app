@@ -32,7 +32,7 @@ function AllCourses() {
             <div className={styles.grid}>
                 {listOfCourses.map(course => (
                     <div key={course.coursecode}>
-                        <p className={styles.card}>{course.coursecode}</p>
+                        <h2 className={styles.card}>{course.coursecode}</h2>
                     </div>
                 ))}
             </div>
