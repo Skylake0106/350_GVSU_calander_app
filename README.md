@@ -73,20 +73,20 @@ ___
 
 ## 4 UI Designs
 
-### 4.1 Home Screen
+### 4.1 Calendar View
 <p align="center">
-  <img width="75%" alt="Screen Shot 2022-10-02 at 6 25 57 PM" src="https://user-images.githubusercontent.com/89789705/193479490-1208a3af-f582-437b-b50e-0a9dd18e206b.png">
+  <img width="1440" alt="Screen Shot 2022-12-12 at 10 09 24 AM" src="https://user-images.githubusercontent.com/89789705/207080913-452cca44-c171-45be-90b3-4d952b888be8.png">
 </p>
 
-### 4.2 Main Screen
+### 4.2 Courses View
 <p align="center">
-<img width="75%" alt="Screen Shot 2022-10-06 at 8 18 27 PM" src="https://user-images.githubusercontent.com/89789705/194440888-c78757e4-5b83-40aa-b1d9-0acad4564116.png">
+<img width="1440" alt="Screen Shot 2022-12-12 at 10 08 48 AM" src="https://user-images.githubusercontent.com/89789705/207081124-f36b520d-cb26-4936-bf0f-04f2ea61debe.png">
 </p>
 
 
-### 4.3 Constraint Screen
+### 4.3 Professors View
 <p align="center">
-  <img width="75%" alt="Screen Shot 2022-10-02 at 5 54 34 PM" src="https://user-images.githubusercontent.com/89789705/193479539-5ef80d7d-301f-4990-91f4-4ba7cd871cc9.jpeg">
+<img width="1440" alt="Screen Shot 2022-12-12 at 10 09 41 AM" src="https://user-images.githubusercontent.com/89789705/207081181-52574143-f64d-49df-ba9d-8ab835960c66.png">
 </p>
 
 ### Risks Analysis And Retrospective
