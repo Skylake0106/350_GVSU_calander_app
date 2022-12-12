@@ -146,6 +146,7 @@ function Courses() {
               <h1></h1>
               <button className={styles.toProfessorButton}> <Link href="/posts/Professors">Professors Page</Link> </button>
               <button className={styles.toCalendarFromCoursesButton}> <Link href="/">Calendar Page</Link> </button>
+              <button className={styles.toProfessorButton}><Link href="/posts/allCourses"> See all Courses</Link></button>
 
               {/* Form to assign a professor to a course */}
               <h1 className={styles.gvsuHeader}>Assign a Professor Here</h1>
