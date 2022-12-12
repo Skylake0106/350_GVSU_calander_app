@@ -13,7 +13,7 @@ function AllCourses() {
     const [listOfCourses, setCourses] = useState([]);
 
     useEffect(() => {
-        fetch('../api/courses/')
+        fetch('/api/courses/')
           .then(response => response.json())
           .then(data => {
             setCourses(data);
