@@ -1,35 +1,13 @@
 import React from 'react'
-import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import { useEffect, useState } from "react";
 import styles from '../../styles/Home.module.css';
 import Link from 'next/link'
 
-
+// Professors page
 function Professors() {
-    const [listOfCourses, setListOfCourses] = useState([]);
-    const [sectionID, setSectionID] = useState("");
-    const [courseCode, setCourseCode] = useState("");
-    const [courseName, setCourseName] = useState("");
-    const [sectionNum, setSectionNum] = useState("");
-    const [creditHrs, setCreditHrs] = useState("");
-    const [partOfTerm, setPartOfTerm] = useState("");
-    const [campusLoc, setCampusLoc] = useState("");
-    const [instructMeth, setInstructMeth] = useState("");
-    const [sectionStatus, setSectionStatus] = useState("");
-    const [sectionAttr, setSectionAttr] = useState("");
-    const [meetDays, setMeetDays] = useState("");
-    const [meetStartTime, setMeetStartTime] = useState("");
-    const [meetEndTime, setMeetEndTime] = useState("");
-    const [meetStartDate, setMeetStartDate] = useState("");
-    const [meetEndDate, setMeetEndDate] = useState("");
-    const [showDetails, setShowDetails] = useState(false);
-  
-    // TODO: set up attributes for courses - change type?
-    const [priority, setPriority] = useState(0);
-    const [listOfProfessors, setProfessors] = useState([]);
-    const [listOfDepths, setDepths] = useState([]);
-
+    
+    // API gets all professors from depth table
     useEffect(() => {
       fetch('../api/depths/')
         .then(response => response.json())
@@ -58,40 +36,46 @@ function Professors() {
     
       return (
         <div>
-        <form className={styles.alignCenter}onSubmit={handleSubmit}>
-          <input
-            type="text"
-            value={inputValue}
-            onChange={(event) => setInputValue(event.target.value)}
-          />
-          <button type="submit">Submit</button>
+          {/* Form for inputting a professors id */}
+          <form className={styles.alignCenter}onSubmit={handleSubmit}>
+            <input
+              type="text"
+              value={inputValue}
+              onChange={(event) => setInputValue(event.target.value)}
+            />
+            <button type="submit">Submit</button>
           </form>
+
+          {/* Text for displaying the professor */}
           <div>
-          {apiResponse.map(professors => (
-            <div key={professors.items} className={styles.gvsuHeaders}>
+            {apiResponse.map(professors => (
+              <div key={professors.items} className={styles.gvsuHeaders}>
                 <text className={styles.courseData}>
                   <h1>Professor: {professors.lastname}</h1>
                 </text>
-            </div>
-          ))}
+              </div>
+            ))}
           </div>
-          </div>
+        </div>
       );
     }
 
     return (
       <div>
-      <div className={styles.black}><button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button> </div>
-      <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
+        {/* Buttons to go to other pages */}
         <div className={styles.black}>
-            {/* Main content */}
+          <button className={styles.toCalendarButton}> <Link href="/"> To Calendar Page</Link> </button>
+        </div>
+        <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
+
+          {/* Main content */}
+          <div className={styles.black}>
             <main className={styles.main}>
-                <h1 className={styles.gvsuHeader}>Welcome To The Professor's Page, Please Input Professor ID To View Data</h1>
-                {profForm()}
-                {/*buttons to calendar and courses pages*/}
-                </main>
-        </div>
-        </div>
+              <h1 className={styles.gvsuHeader}>Welcome To The Professor's Page, Please Input Professor ID To View Data</h1>
+              {profForm()}
+            </main>
+          </div>
+      </div>
     );
 }
 export default Professors

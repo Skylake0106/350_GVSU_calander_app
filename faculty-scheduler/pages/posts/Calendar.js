@@ -8,13 +8,16 @@ import { useRef } from "react";
 import { useEffect, useState } from "react";
 import Link from 'next/link';
 
+// Calendar page
 function Calendar() {
   const calendarRef = useRef(null);
   const [listOfCourses, setCourses] = useState([]);
 
+  // Form for inserting a course code to populate calendar
   function courseViewForm() {
     const [inputValue, setInputValue] = useState("");
   
+    // API call to get all sections of a course
     const handleSubmit = async (event) => {
       event.preventDefault();
       setCourses([]);
@@ -23,6 +26,7 @@ function Calendar() {
       setCourses(data);
     };
   
+    // returns form
     return (
       <form className={styles.alignCenter}onSubmit={handleSubmit}>
         <input
@@ -35,7 +39,8 @@ function Calendar() {
       </form>
     );
   }
- 
+  
+  // maps all sections returned from API to a list of events
   const events = listOfCourses.map(course => ({
     title: course.coursecode + " Section: " + course.sectionnum,
     daysOfWeek: weekToNum(course.meetdays),
@@ -63,15 +68,22 @@ function Calendar() {
   //returns calendar and assigns attributes
   return (
     <>
+      {/* Buttons for moving between pages */}
       <button className={styles.toProfessorButton}> <Link href="/posts/Professors">Professors Page</Link> </button>
       <button className={styles.toCoursesButton}><Link href="/posts/Courses"> To Courses Page</Link></button>
+      
+      {/* Form for inserting a course code to populate calendar */}
       <h1 className={styles.gvsuHeader}>Calander (Insert Course Code Below)</h1>
-      <div>{courseViewForm()}</div><FullCalendar ref={calendarRef} defaultView="dayGridMonth"
+      <div>{courseViewForm()}</div>
+      
+      {/* Calendar */}
+      <FullCalendar ref={calendarRef} defaultView="dayGridMonth"
       header={{ left: 'prev,next', center: 'title', right: 'dayGridWeek,dayGridMonth' }} //defines the header
       plugins={[timeGridPlugin, dayGridPlugin, interactionPlugin]} //what plugins are included in the full calendar
       editable={true} //allows events to be added and removed from the calendar
       dateClick={handleDateClick} // allows interaction between cursor and calendar days/times
       events={events} />
+
     </>
   );
 };
@@ -106,7 +118,6 @@ function weekToNum(week) {
         break;
     }
   }
-  console.log(days)
   // return the array of days
   return days;
 }

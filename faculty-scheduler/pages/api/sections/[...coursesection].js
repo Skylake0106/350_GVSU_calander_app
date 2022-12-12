@@ -2,9 +2,8 @@ import axios from 'axios';
 
 export default async (req, res) => {
     const { coursesection } = req.query;
-    // print out the coursesection
     try {
-    // API gets one course from coursetable
+    // Catchall statement for API gets either all sections, all sections of a course, or a specific section from sectiontable
     let url = '';
     if (coursesection.length == 2) {
         url = 'https://apex.oracle.com/pls/apex/facultyschedulerasst/sectiontable/cis/' + coursesection[0] + '/' + coursesection[1];

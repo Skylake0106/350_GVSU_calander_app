@@ -3,7 +3,7 @@ import axios from 'axios';
 export default async (req, res) => {
     const { code } = req.query;
     try {
-    // API gets one course from coursetable
+    // API gets one course from coursetable based on the course code
     const url = 'https://apex.oracle.com/pls/apex/facultyschedulerasst/coursetable/cis/' + code;
     const response = await axios.get(url);
     const data = response.data;

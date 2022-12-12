@@ -3,7 +3,7 @@ import axios from 'axios';
 export default async (req, res) => {
     const { coursecode } = req.query;
     try {
-    // API gets one depth rating for a professor by prof ID
+    // API gets a list of professors for a specific course based on their depth rating from depthtable
     const url = 'https://apex.oracle.com/pls/apex/facultyschedulerasst/courses/depth_for_course/' + coursecode;
     const response = await axios.get(url);
     const data = response.data.items;

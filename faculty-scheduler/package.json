@@ -23,6 +23,7 @@
     "next": "^12.3.3",
     "next-transpile-modules": "^10.0.0",
     "node-sass": "^8.0.0",
+    "package": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "reactjs-popup": "^2.0.5",
